@@ -1,14 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Layouts from '../layouts'
 
 export default function Home() {
   return (
     <>
-      <h1>Hello world</h1>
+      <Layouts>
+          <h1>Hello guys</h1>
+      </Layouts>
     </>
   )
 }
