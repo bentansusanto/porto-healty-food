@@ -1,0 +1,84 @@
+{
+    "menu" : [
+        {
+            "title" : "Egg with herbs salad",
+            "category" : "Healty Food",
+            "price" : 25,
+            "rating" : 2.3,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Hamburger with meat and egg",
+            "category" : "Fast Food",
+            "price" : 28,
+            "rating" : 3.2,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1624981013208-bb9adbb3f7b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Meat with egg and herbs salad",
+            "category" : "Healty Food",
+            "price" : 27,
+            "rating" : 2.5,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1604909052743-94e838986d24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Pizza with slicing sosis and tomato",
+            "category" : "Fast Food",
+            "price" : 28,
+            "rating" : 3.2,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1624981013208-bb9adbb3f7b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Beef with herbs salad",
+            "category" : "Healty Food",
+            "price" : 30,
+            "rating" : 2.8,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1604909054103-f9ed51a70caf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Pasta with Vongole",
+            "category" : "Fast Food",
+            "price" : 28.6,
+            "rating" : 3.1,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1595295333158-4742f28fbd85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960&q=80"
+        },
+        {
+            "title" : "Avocado with herbs salad",
+            "category" : "Healty Food",
+            "price" : 22,
+            "rating" : 2.5,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Ramen noodle with egg and seafood",
+            "category" : "Fast Food",
+            "price" : 28,
+            "rating" : 3.5,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        },
+        {
+            "title" : "Grilled chickend with herbs salad",
+            "category" : "Healty Food",
+            "price" : 26,
+            "rating" : 2.8,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1509&q=80"
+        },
+        {
+            "title" : "Fried potato with black papper",
+            "category" : "Fast Food",
+            "price" : 20,
+            "rating" : 3.2,
+            "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti quam aut possimus itaque explicabo ratione repudiandae eaque obcaecati consequatur!",
+            "image" : "https://images.unsplash.com/photo-1639744091981-2f826321fae6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        }
+    ]
+}

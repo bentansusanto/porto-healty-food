@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import AboutSection from "./components/AboutSection";
 import { HeroSection } from "./components/HeroSection";
+import MenuSection from "./components/MenuSection";
 import ServiceSection from "./components/ServiceSection";
 
 const HeroContent = {
@@ -12,26 +14,40 @@ const HeroContent = {
 
 const Service = [
   {
-    title : 'Free Shipping',
-    content : 'Orders over $140',
-    icon : require('../../public/assets/shipping.svg')
+    title: "Free Shipping",
+    content: "Orders over $140",
+    icon: require("../../public/assets/shipping.svg"),
   },
   {
-    title : 'Quick Payment',
-    content : '100% secure payment',
-    icon : require('../../public/assets/payment.svg')
+    title: "Quick Payment",
+    content: "100% secure payment",
+    icon: require("../../public/assets/payment.svg"),
   },
   {
-    title : 'Special Promo',
-    content : 'Get special promo',
-    icon : require('../../public/assets/promo.svg')
+    title: "Special Promo",
+    content: "Get special promo",
+    icon: require("../../public/assets/promo.svg"),
   },
   {
-    title : '24/7 Support',
-    content : 'Ready support',
-    icon : require('../../public/assets/support.svg')
+    title: "24/7 Support",
+    content: "Ready support",
+    icon: require("../../public/assets/support.svg"),
   },
-]
+];
+
+const About = {
+  subtitle: "About Us",
+  title: "The More Healthy Food The Better",
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, repellendus dolores. Reprehenderit dignissimos sed, mollitia blanditiis maiores quam.",
+  image: require("../../public/assets/bg-about.svg"),
+};
+
+const Menu = {
+  subtitle : 'Our Menu',
+  title : 'Our Best Menu With Category',
+  content : 'Lorem ipsum dolor sit amet, adipisicing elit officiis, repellendus dolores.'
+}
 
 function Homepage() {
   const [Mobile, setMobile] = useState(false);
@@ -55,7 +71,9 @@ function Homepage() {
   return (
     <>
       <HeroSection hero={HeroContent} mobile={Mobile} />
-      <ServiceSection service={Service} mobile={Mobile}/>
+      <ServiceSection service={Service} mobile={Mobile} />
+      <AboutSection about={About} mobile={Mobile} />
+      <MenuSection menu={Menu} mobile={Mobile}/>
     </>
   );
 }
