@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'navMobile': '10px 0 20px 0 rgba(0, 0, 0, 0.2)',
+      }
     },
     fontFamily : {
       'vollkron' : ['Vollkorn'],
@@ -13,7 +16,11 @@ module.exports = {
     },
     colors : {
       'orange' : '#FF5B00',
-      'hijau' : '#57BD8B'
+      'orangemuda' :'#FFF3ED',
+      'hijau' : '#57BD8B',
+      'black' : '#000000',
+      'white' : '#ffffff',
+      'gray' : '#ACACAC'
     }
   },
   plugins: [],
