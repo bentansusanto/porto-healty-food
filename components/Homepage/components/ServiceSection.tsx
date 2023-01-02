@@ -21,7 +21,7 @@ const ServiceSection: React.FC<serviceProps> = (props) => {
       />
       <div
         className={`${
-          props.mobile ? "grid-cols-2 mx-6 gap-10" : "grid-cols-4 gap-5 mx-20"
+          props.mobile ? "grid-cols-2 mx-5 gap-10" : "grid-cols-4 gap-5 mx-20"
         } grid justify-items-center mt-20`}
       >
         {props.service.map((val, idx) => (

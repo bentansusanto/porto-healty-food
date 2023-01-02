@@ -17,7 +17,7 @@ interface AboutContent{
 const AboutSection : React.FC<AboutProps> = (props) => {
   return (
     <div className='mb-40'>
-      <div className={`${props.mobile ? "block mx-6 space-y-5" : "flex mx-32 items-center"} flex-row-reverse`}>
+      <div className={`${props.mobile ? "block mx-5 space-y-5" : "flex mx-32 items-center"} flex-row-reverse`}>
         <Image src={props.about.image} alt=""/>
         <div className='space-y-2'>
             <p className='text-orange font-semibold text-[.9rem]'>{props.about.subtitle}</p>

@@ -4,7 +4,7 @@
 }
 
 .Logo{
-    @apply font-vollkron text-2xl font-bold md:ml-0 ml-6
+    @apply font-vollkron text-2xl font-bold md:ml-0 ml-5
 }
 
 .Cart{

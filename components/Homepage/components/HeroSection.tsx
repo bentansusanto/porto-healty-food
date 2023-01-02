@@ -16,7 +16,7 @@ interface heroContent {
 
 export const HeroSection: React.FC<heroProps> = (props) => {
   return (
-    <div className={`${props.mobile ? "block px-6 space-y-4" : "flex px-20 space-x-14 mt-10"} mb-32`}>
+    <div className={`${props.mobile ? "block px-5 space-y-4" : "flex px-20 space-x-14 mt-10"} mb-32`}>
       {/* Image */}
       <div>
         <Image

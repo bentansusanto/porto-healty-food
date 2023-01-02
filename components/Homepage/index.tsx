@@ -3,6 +3,8 @@ import AboutSection from "./components/AboutSection";
 import { HeroSection } from "./components/HeroSection";
 import MenuSection from "./components/MenuSection";
 import ServiceSection from "./components/ServiceSection";
+import axios from 'axios'
+import TestimoniSection from "./components/TestimoniSection";
 
 const HeroContent = {
   promo: "Sall Top 20% Off",
@@ -49,8 +51,28 @@ const Menu = {
   content : 'Lorem ipsum dolor sit amet, adipisicing elit officiis, repellendus dolores.'
 }
 
+const TestimoniContent = {
+  subtitle : '- What they are say -',
+  title : 'What they are says about us',
+  image : require('../../public/assets/bg-testimoni.svg')
+}
+
+const Testimoni =[
+  {
+    name : 'Erick Smith',
+    job : 'Food Vlogger',
+    message : '"All service provided is so perfect and fast, and im so happy to order from this company"',
+    rating : 4.9,
+    foto : require('../../public/assets/erick-smith.svg')
+  }
+]
+
 function Homepage() {
   const [Mobile, setMobile] = useState(false);
+  const [Datas, setDatas] = useState([]);
+  const baseURL = 'http://localhost:5000';
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     // checked window
     if (typeof window !== "undefined") {
@@ -68,12 +90,30 @@ function Homepage() {
     }
   }, []);
 
+  // Fetch api
+  useEffect(() => {
+    getMenu();
+  }, []);
+
+  const getMenu = async() => {
+      await axios.get(`${baseURL}/menu`)
+      .then((response) => {
+        console.log(response.data)
+        setDatas(response.data)
+        setLoading(false)
+      }).catch((err) => {
+        console.log(err);
+        setLoading(false)
+      });
+  }
+
   return (
     <>
       <HeroSection hero={HeroContent} mobile={Mobile} />
       <ServiceSection service={Service} mobile={Mobile} />
       <AboutSection about={About} mobile={Mobile} />
-      <MenuSection menu={Menu} mobile={Mobile}/>
+      <MenuSection menu={Menu} mobile={Mobile} data={Datas} loading={loading}/>
+      <TestimoniSection testimoni={TestimoniContent} testimonis={Testimoni} mobile={Mobile}/>
     </>
   );
 }
