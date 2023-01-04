@@ -5,6 +5,7 @@ import MenuSection from "./components/MenuSection";
 import ServiceSection from "./components/ServiceSection";
 import axios from 'axios'
 import TestimoniSection from "./components/TestimoniSection";
+import SubscribeSection from "./components/SubscribeSection";
 
 const HeroContent = {
   promo: "Sall Top 20% Off",
@@ -67,6 +68,12 @@ const Testimoni =[
   }
 ]
 
+const Subscribe = {
+  title : 'Get more discount if you order from us',
+  content : 'Join with us then you must have get a discount and get promo from us to you , enjoy and happy to order.',
+  image : require('../../public/assets/bg-subscribe.svg')
+}
+
 function Homepage() {
   const [Mobile, setMobile] = useState(false);
   const [Datas, setDatas] = useState([]);
@@ -114,6 +121,7 @@ function Homepage() {
       <AboutSection about={About} mobile={Mobile} />
       <MenuSection menu={Menu} mobile={Mobile} data={Datas} loading={loading}/>
       <TestimoniSection testimoni={TestimoniContent} testimonis={Testimoni} mobile={Mobile}/>
+      <SubscribeSection subscribe={Subscribe} mobile={Mobile}/>
     </>
   );
 }
