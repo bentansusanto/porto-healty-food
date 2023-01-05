@@ -39,7 +39,7 @@ const SubscribeSection: React.FC<SubscribeProps> = (props) => {
               <input
                 type="text"
                 placeholder="Enter your email"
-                className={`${props.mobile ? "" : "w-[18rem]"} bg-[#FAFAFA] rounded-sm py-5 px-6 placeholder:text-[.9rem]`}
+                className={`${props.mobile ? "" : "w-[18rem]"} bg-[#FAFAFA] rounded-sm py-5 px-6 placeholder:text-[.9rem] outline-none`}
               />
             </div>
             <button className="bg-black text-white py-5 px-6 rounded-sm">Get</button>
