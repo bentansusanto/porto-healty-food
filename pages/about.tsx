@@ -1,12 +1,12 @@
-import React from 'react'
-import Layouts from '../layouts'
+import About from "../components/About";
+import Layouts from "../layouts";
 
 export default function about() {
   return (
     <>
       <Layouts>
-        <h1>Hello guys how are you</h1>
+        <About />
       </Layouts>
     </>
-  )
+  );
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { BiHomeSmile } from "react-icons/bi";
 import { CiUser } from "react-icons/ci";
@@ -9,15 +10,28 @@ import Cart from "../../public/assets/carticon.svg";
 import Search from "../../public/assets/search.svg";
 import styles from "./Navbar.module.css";
 
+type navItem = {
+  page: string;
+  link: string;
+  icon: any;
+};
+
+const link: navItem[] = [
+  { page: "Homepage", link: "/", icon: <BiHomeSmile /> },
+  { page: "Menu", link: "/menu", icon: <MdOutlineRestaurantMenu /> },
+  { page: "Blog", link: "/blog", icon: <FaBlogger /> },
+];
+
 function Navbar() {
+  const router = useRouter();
   const [Mobile, setMobile] = useState(false);
-  const link = [
-    { page: "Homepage", link: "/", icon: <BiHomeSmile /> },
-    { page: "Menu", link: "", icon: <MdOutlineRestaurantMenu /> },
-    { page: "Blog", link: "/blog", icon: <FaBlogger /> },
-  ];
-  const [active, setActive] = useState(link[0].page)
-  
+
+  const [activeItem, setActiveItem] = useState<navItem | null>(link[0]);
+
+  const navActive = (val: navItem) => {
+    setActiveItem(val);
+  };
+
   useEffect(() => {
     // checked window
     if (typeof window !== "undefined") {
@@ -34,7 +48,6 @@ function Navbar() {
       };
     }
   }, []);
-
 
   return (
     <div>
@@ -55,11 +68,11 @@ function Navbar() {
           } flex `}
         >
           {link.map((val, idx) => (
-            <li key={idx} className={`${val.page === active ? 'text-orange' : ''}`}
-            onClick={(e) => {
-                e.preventDefault()
-                setActive(val.page)
-              }}>
+            <li
+              key={idx}
+              onClick={() => navActive(val)}
+              className={router.pathname == val.link ? 'active text-orange' : ''}
+            >
               <Link href={val.link}>
                 {Mobile ? (
                   <p className="text-2xl text-gray-500">{val.icon}</p>
@@ -69,7 +82,7 @@ function Navbar() {
               </Link>
             </li>
           ))}
-          <li className="text-2xl">{Mobile ? <CiUser /> : ''}</li>
+          <li className="text-2xl">{Mobile ? <CiUser /> : ""}</li>
         </ul>
 
         {/* Cart, Search, and Sign Up */}
@@ -83,12 +96,12 @@ function Navbar() {
           </div>
           <div className={styles.Cart}>
             <Image src={Cart} alt="" className="w-4.5" />
-            <span className='bg-orange rounded-full py-1/4 px-1.5 text-[.8rem] absolute top-0 left-3'>0</span>
+            <span className="bg-orange rounded-full py-1/4 px-1.5 text-[.8rem] absolute top-0 left-3">
+              0
+            </span>
           </div>
           <div>
-            {
-                Mobile ?  '':(<button className={styles.signup}>Sign Up</button>) 
-            }
+            {Mobile ? "" : <button className={styles.signup}>Sign Up</button>}
           </div>
         </div>
       </nav>
