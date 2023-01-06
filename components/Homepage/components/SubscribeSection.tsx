@@ -14,13 +14,13 @@ interface SubscribeContent {
 const SubscribeSection: React.FC<SubscribeProps> = (props) => {
   return (
     <div className="mb-32">
-      <div className={`${props.mobile ? "block mx-6 space-y-3" : "flex space-x-20 mx-32"}`}>
+      <div className={`${props.mobile ? "block mx-6 space-y-3" : "flex space-x-20 mx-40"}`}>
         <Image src={props.subscribe.image} alt="" />
         {/* Content */}
         <div className="space-y-3">
           <h1
             className={`${
-              props.mobile ? "text-[2.3rem]" : "text-[3.5rem] w-[80%]"
+              props.mobile ? "text-[2.3rem]" : "text-[3.5rem] w-[90%]"
             } font-vollkron font-semibold`}
           >
             {props.subscribe.title}
