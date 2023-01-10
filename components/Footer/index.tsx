@@ -93,7 +93,7 @@ const Footer = () => {
     <div>
         {
             Mobile ? "" : 
-            (<div className='mx-32 mb-8 grid grid-cols-2'> 
+            (<div className='mx-32 mb-8 mt-20 grid grid-cols-2'> 
               {/* footer descktop */}
               <div className='space-y-3'>
                 <h1 className='text-2xl font-vollkron font-semibold'>JXB Food<span className='text-orange'>.</span></h1>
