@@ -63,7 +63,7 @@ function Navbar() {
         <ul
           className={`${
             Mobile
-              ? "bg-white w-full fixed bottom-0 rounded-sm ml-0 py-3 px-6 justify-center space-x-20 shadow-navMobile"
+              ? "bg-white w-full fixed bottom-0 rounded-sm ml-0 py-3 px-6 justify-center space-x-20 shadow-navMobile z-50"
               : "ml-12 space-x-10"
           } flex `}
         >
