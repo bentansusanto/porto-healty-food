@@ -21,7 +21,7 @@ const listMenu: React.FC<listMenuProps> = (props) => {
     <div
       className={`${
         props.mobile ? "grid-cols-2 gap-x-5 mx-6" : "grid-cols-4 gap-x-10 mx-20"
-      } grid  mt-5 gap-y-10`}
+      } grid  mt-5 gap-y-10 z-0 relative`}
     >
       {props.menu.map((val, idx) => (
         <div key={idx} className="space-y-2">
